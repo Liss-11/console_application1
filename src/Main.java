@@ -51,7 +51,7 @@ public class Main {
                 scan.nextLine();
                 if (type.equals("employee")) {
                     myEmployees.add(new Employee(type, name, surname, age, dni, salary));
-                } else if (type.equals("intern")) {
+                } else {
                     myEmployees.add(new Intern(type, name, surname, age, dni, salary));
                 }
 
@@ -64,7 +64,7 @@ public class Main {
                             "DNI: " + dni + " and Salary: " + myEmployees.get(i).getSalary() + "\n");
                 }
             }else {
-                System.out.println("This type of user is INVALID, it has to be an \"employee\" or an \"intern\" !");                i--;
+                System.out.println("This type of user is INVALID, it has to be an \"employee\" or an \"intern\" !");
                 i--;
             }
         }
