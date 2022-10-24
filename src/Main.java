@@ -51,7 +51,7 @@ public class Main {
                 scan.nextLine();
                 if (type.equals("employee")) {
                     myEmployees.add(new Employee(type, name, surname, age, dni, salary));
-                } else if (type.equals("intern")) {
+                } else {
                     myEmployees.add(new Intern(type, name, surname, age, dni, salary));
                 }
 
@@ -65,7 +65,6 @@ public class Main {
                 }
             }else {
                 System.out.println("This type of user is INVALID, it has to be an \"employee\" or an \"intern\" !");                i--;
-                i--;
             }
         }
         scan.close();
