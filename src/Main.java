@@ -97,6 +97,7 @@ public class Main {
                 i++;
             }else{
                 System.out.println("This type of user is INVALID, it has to be an \"employee\" or an \"intern\" !");
+                i--;
             }
         }
         reader.close();
